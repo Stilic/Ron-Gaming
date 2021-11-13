@@ -2767,6 +2767,28 @@ songSpeed = SONG.speed;
 			
 			case 'BG Freaks Expression':
 				if(bgGirls != null) bgGirls.swapDanceType();
+
+			case 'Funscare':
+				var bruh:FlxSprite = new FlxSprite(DAD_X - 125, DAD_Y - 200);
+				bruh.loadGraphic(Paths.image('longbob'));
+				bruh.antialiasing = true;
+				bruh.active = false;
+				bruh.scrollFactor.set();
+				bruh.cameras = [camGame];
+				add(bruh);
+				FlxTween.tween(bruh, {alpha: 0},1, {
+					ease: FlxEase.cubeInOut,
+					onComplete: function(twn:FlxTween)
+					{
+						bruh.destroy();
+					}
+				});
+
+			case 'Ron Ugh':
+				if (Std.parseInt(value1) == 1)
+					moveCamera(true);
+				FlxTween.tween(FlxG.camera, {zoom: 1.5}, 0.4, {ease: FlxEase.expoOut});
+				dad.playAnim('ugh', true);
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
