@@ -1,0 +1,145 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				63,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Sing Left"
+		},
+		{
+			"offsets": [
+				64,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Sing Up"
+		},
+		{
+			"offsets": [
+				0,
+				-13
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Sing Right"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-loop",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"offsets": [
+				84,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "ugh",
+			"indices": [],
+			"name": "Ugh"
+		},
+		{
+			"offsets": [
+				40,
+				-110
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Sing Down"
+		},
+		{
+			"offsets": [
+				63,
+				0
+			],
+			"indices": [
+				0,
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"loop": false,
+			"name": "Sing Left"
+		},
+		{
+			"offsets": [
+				0,
+				-13
+			],
+			"indices": [
+				0,
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"loop": false,
+			"name": "Sing Right"
+		},
+		{
+			"offsets": [
+				64,
+				50
+			],
+			"indices": [
+				0,
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "singUP-loop",
+			"loop": false,
+			"name": "Sing Up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/GamerRon",
+	"position": [
+		0,
+		270
+	],
+	"healthicon": "gamer-ron",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		150,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"Ron",
+			"gamer-ron",
+			[
+				146,
+				113,
+				0
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"storyName": "All Mens Do It",
+	"weekName": "Week Ron Gaming",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
