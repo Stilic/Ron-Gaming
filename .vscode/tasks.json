@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "lime",
-			"command": "build",
+			"command": "test",
 			"problemMatcher": [
 				"$haxe-absolute",
 				"$haxe",
@@ -14,7 +14,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"label": "lime: build (active configuration)"
+			"label": "lime: test (active configuration)"
 		}
 	]
 }
