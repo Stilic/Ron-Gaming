@@ -1,0 +1,10 @@
+{
+	"idle_anim": "Idle",
+	"image": "GamerRonStoryMenu",
+	"position": [
+		120,
+		50
+	],
+	"scale": 0.7,
+	"confirm_anim": "M Dad Idle"
+}

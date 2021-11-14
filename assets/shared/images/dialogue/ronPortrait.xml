@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ronPortrait.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gamerronIdle0000" x="0" y="0" width="390" height="371"/>
+	<SubTexture name="gamerronTalk0000" x="390" y="0" width="390" height="371" frameX="0" frameY="-30" frameWidth="390" frameHeight="403"/>
+	<SubTexture name="gamerronTalk0001" x="780" y="0" width="390" height="402" frameX="0" frameY="0" frameWidth="390" frameHeight="403"/>
+	<SubTexture name="gamerronTalk0002" x="1170" y="0" width="390" height="355" frameX="0" frameY="-47" frameWidth="390" frameHeight="403"/>
+	<SubTexture name="gamerronTalk0003" x="1560" y="0" width="390" height="334" frameX="0" frameY="-69" frameWidth="390" frameHeight="403"/>
+	<SubTexture name="gamerronTalk0004" x="1560" y="0" width="390" height="334" frameX="0" frameY="-69" frameWidth="390" frameHeight="403"/>
+	<SubTexture name="ronIdle0000" x="0" y="402" width="324" height="314"/>
+	<SubTexture name="ronTalk0000" x="324" y="402" width="324" height="314" frameX="0" frameY="-26" frameWidth="324" frameHeight="340"/>
+	<SubTexture name="ronTalk0001" x="648" y="402" width="324" height="340"/>
+	<SubTexture name="ronTalk0002" x="972" y="402" width="324" height="297" frameX="0" frameY="-43" frameWidth="324" frameHeight="340"/>
+	<SubTexture name="ronTalk0003" x="1296" y="402" width="324" height="281" frameX="0" frameY="-59" frameWidth="324" frameHeight="340"/>
+	<SubTexture name="ronTalk0004" x="1296" y="402" width="324" height="281" frameX="0" frameY="-59" frameWidth="324" frameHeight="340"/>
+</TextureAtlas>

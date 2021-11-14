@@ -1,4 +1,20 @@
 {
+	"storyName": "Mmmhmhmmh Testing",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"weekCharacters": [
+		"gamerron",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"Ron",
@@ -10,21 +26,5 @@
 			]
 		]
 	],
-	"hideFreeplay": false,
-	"weekBackground": "",
-	"weekCharacters": [
-		"",
-		"bf",
-		"gf"
-	],
-	"storyName": "All Mens Do It",
-	"weekName": "Week Ron Gaming",
-	"freeplayColor": [
-		146,
-		113,
-		253
-	],
-	"hideStoryMode": false,
-	"weekBefore": "tutorial",
-	"startUnlocked": true
+	"weekName": "Week Ron Gaming"
 }
