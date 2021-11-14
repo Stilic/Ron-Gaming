@@ -156,6 +156,8 @@ class PlayState extends MusicBeatState
 
 	public var healthBar:FlxBar;
 
+	public var infoTxt:FlxText;
+
 	var songPercent:Float = 0;
 
 	private var timeBarBG:AttachedSprite;
@@ -932,6 +934,15 @@ class PlayState extends MusicBeatState
 		add(healthBar);
 		healthBarBG.sprTracker = healthBar;
 
+		infoTxt = new FlxText(6, FlxG.height * 0.97
+			- 2, 0,
+			SONG.song
+			+ " - "
+			+ CoolUtil.difficultyStuff[PlayState.storyDifficulty][0] + " | PE " + MainMenuState.psychEngineVersion, 16);
+		infoTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		infoTxt.scrollFactor.set();
+		add(infoTxt);
+
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
 		iconP1.visible = !ClientPrefs.hideHud;
@@ -966,6 +977,7 @@ class PlayState extends MusicBeatState
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
+		infoTxt.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
