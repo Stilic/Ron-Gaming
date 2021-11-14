@@ -1,10 +1,10 @@
 function onCreate()
-    makeLuaSprite('sky', 'sky_normal', -300, -300);
-    setScrollFactor('sky', 0.8, 0.8);
+    makeLuaSprite('sky', 'sky_normal', -275, -85);
+    setScrollFactor('sky', 0.1, 0.1);
+    scaleObject('sky', 1.2, 1.2);
 
-    makeLuaSprite('ground', 'ground_normal', -600, -300);
+    makeLuaSprite('ground', 'ground_normal', -520, -260);
 
-    -- scaleObject('stagefront', 1.1, 1.1);
     addLuaSprite('sky', false);
     addLuaSprite('ground', false);
 

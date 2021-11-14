@@ -2027,8 +2027,9 @@ songSpeed = SONG.speed;
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
 
-		iconP1.setGraphicSize(Std.int(FlxMath.lerp(iconP1.width, 150, elapsed / 60)));
-		iconP2.setGraphicSize(Std.int(FlxMath.lerp(iconP2.width, 150, elapsed / 60)));
+		var zoomLerp:Float = 0.09;
+		iconP1.setGraphicSize(Std.int(FlxMath.lerp(iconP1.width, 150, zoomLerp / (FlxG.updateFramerate / 60))));
+		iconP2.setGraphicSize(Std.int(FlxMath.lerp(iconP2.width, 150, zoomLerp / (FlxG.updateFramerate / 60))));
 
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
