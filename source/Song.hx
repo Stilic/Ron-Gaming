@@ -4,7 +4,6 @@ import Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
-
 #if sys
 import sys.io.File;
 import sys.FileSystem;
@@ -24,7 +23,6 @@ typedef SwagSong =
 	var player2:String;
 	var player3:String;
 	var stage:String;
-
 	var arrowSkin:String;
 	var splashSkin:String;
 	var validScore:Bool;
@@ -55,17 +53,19 @@ class Song
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong
 	{
 		var rawJson = null;
-		
+
 		var formattedFolder:String = Paths.formatToSongPath(folder);
 		var formattedSong:String = Paths.formatToSongPath(jsonInput);
 		#if MODS_ALLOWED
 		var moddyFile:String = Paths.modsJson(formattedFolder + '/' + formattedSong);
-		if(FileSystem.exists(moddyFile)) {
+		if (FileSystem.exists(moddyFile))
+		{
 			rawJson = File.getContent(moddyFile).trim();
 		}
 		#end
 
-		if(rawJson == null) {
+		if (rawJson == null)
+		{
 			#if sys
 			rawJson = File.getContent(Paths.json(formattedFolder + '/' + formattedSong)).trim();
 			#else
@@ -96,7 +96,8 @@ class Song
 				daBpm = songData.bpm; */
 
 		var songJson:SwagSong = parseJSONshit(rawJson);
-		if(jsonInput != 'events') StageData.loadDirectory(songJson);
+		if (jsonInput != 'events')
+			StageData.loadDirectory(songJson);
 		return songJson;
 	}
 
